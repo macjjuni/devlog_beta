@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import '../style/globals.css';
 import 'kku-ui/lib/styles/index.css';
+import '../style/globals.css';
+import LayoutContainer from '@/layout/LayoutContainer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body>
+        <LayoutContainer>{children}</LayoutContainer>
+      </body>
     </html>
   );
 }

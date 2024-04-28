@@ -1,7 +1,3 @@
-import React from 'react';
-
-function ArchivePage() {
-  return <div>ArchivePage</div>;
+export default function ArchivePage() {
+  return <div>Archive</div>;
 }
-
-export default ArchivePage;
