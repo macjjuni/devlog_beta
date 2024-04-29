@@ -1,0 +1,22 @@
+
+.main {
+    flex: 1 1 auto;
+    width: 100%;
+
+    padding: $kku-layout-large-padding;
+
+}
+
+
+@media screen and (max-width: $kku-layout-medium) {
+    .main {
+        padding: $kku-layout-medium-padding;
+    }
+}
+
+@media screen and (max-width: $kku-layout-small) {
+    .main {
+        padding: $kku-layout-small-padding;
+    }
+}
+

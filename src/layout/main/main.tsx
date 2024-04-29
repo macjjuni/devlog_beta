@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
+import './main.scss';
 
 export default function Main({ children }: { children: ReactNode }) {
-  return <main>{children}</main>;
+  return <main className="main">{children}</main>;
 }
