@@ -29,6 +29,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: $kku-default-font-family;
+    color: $kku-black-color;
+    background: $kku-white-color;
 }
 ol, ul {
     list-style: none;
@@ -48,4 +51,8 @@ table {
 a {
     color: inherit;
     text-decoration: inherit;
+}
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
 }
