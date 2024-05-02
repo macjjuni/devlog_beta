@@ -1,0 +1,22 @@
+
+.navigation {
+    width: 260px;
+
+    @include flex-center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .navigation__link {
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+
+    .navigation__link-active {
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: $kku-layout-small) {
+
+    .navigation { display: none; }
+}
