@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ko">
       <body>
-        <div className="kku-wrapper">
+        <div className="kku__body__wrapper">
           <Header />
           <Main>{children}</Main>
           <Footer />

@@ -1,3 +1,5 @@
+import ArchiveLayout from '@/app/archive/pageLayout';
+
 export default function ArchivePage() {
-  return <div>Archive</div>;
+  return <ArchiveLayout>Archive</ArchiveLayout>;
 }

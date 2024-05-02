@@ -1,3 +1,5 @@
+import ProjectLayout from './pageLayout';
+
 export default function ProjectPage() {
-  return <div>Project</div>;
+  return <ProjectLayout>Project</ProjectLayout>;
 }
