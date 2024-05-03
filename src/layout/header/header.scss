@@ -30,8 +30,8 @@
 @media screen and (max-width: $kku-layout-medium) {
     .header {
         flex: 0 0 64px;
-        padding: 0 $kku-layout-medium-padding;
 
+        .header__wrapper { padding: 0 $kku-layout-medium-padding; }
         .header__wrapper > .header__logo > .header__logo__link { font-size: 28px; }
     }
 }
@@ -39,8 +39,8 @@
 @media screen and (max-width: $kku-layout-small) {
     .header {
         flex: 0 0 48px;
-        padding: 0 $kku-layout-small-padding;
 
+        .header__wrapper { padding: 0 $kku-layout-small-padding; }
         .header__wrapper > .header__logo > .header__logo__link { font-size: 22px; }
     }
 }

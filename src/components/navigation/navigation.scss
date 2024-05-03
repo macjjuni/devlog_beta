@@ -8,11 +8,25 @@
 
     .navigation__link {
         font-size: 18px;
-        padding: 4px 8px;
+        padding: 4px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 0;
+            height: 1px;
+            background: $kku-black-color;
+            transition: width 0.33s ease;
+        }
     }
 
     .navigation__link-active {
+        position: relative;
         font-weight: bold;
+
+        &:after { width: calc(100% - 2px); }
     }
 }
 

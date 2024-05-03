@@ -19,13 +19,11 @@
             font-size: 14px;
         }
     }
-
-
 }
 
 
 @media screen and (max-width: $kku-layout-medium) {
-    .footer {
+    .footer > .footer__wrapper {
         padding: 0 $kku-layout-medium-padding;
     }
 }
@@ -34,7 +32,11 @@
     .footer {
         flex: 0 0 32px;
 
-        padding: 0 $kku-layout-small-padding;
+        .footer__wrapper {
+            padding: 0 $kku-layout-small-padding;
+
+            .footer__wrapper__text { font-size: 12px;}
+        }
     }
 }
 
