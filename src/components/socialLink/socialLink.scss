@@ -1,0 +1,18 @@
+
+.social-link__container {
+    @include flex-center;
+    gap: 24px;
+    margin-top: 56px;
+
+    .social-link {
+        @include flex-center;
+        gap: 8px;
+
+        .social-link__icon {
+            height: 28px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .social-link__text { font-size: 18px; }
+    }
+}
