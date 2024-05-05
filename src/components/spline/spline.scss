@@ -1,0 +1,35 @@
+
+
+.kku_spline__wrapper {
+
+    position: absolute;
+    left: $kku-layout-large-padding;
+    top: 50%;
+    width: calc(50% - $kku-layout-large-padding);
+    height: 50dvh;
+    transform: translateY(-50%);
+
+
+    &.kku_spline__wrapper__render-on {
+        visibility: visible;
+        z-index: 1;
+    }
+
+    &.kku_spline__wrapper__render-off {
+        visibility: hidden;
+        z-index: -9999;
+    }
+
+}
+
+
+@media screen and (max-width: $kku-layout-medium) {
+    .kku_spline__wrapper {
+        top: $kku-layout-medium-padding;
+        left: $kku-layout-medium-padding;
+        width: calc(100% - ($kku-layout-medium-padding * 2));
+        height: calc(50dvh - ($kku-layout-medium-padding * 2));
+
+        transform: translateY(0);
+    }
+}
