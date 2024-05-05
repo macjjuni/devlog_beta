@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import 'kku-ui/lib/styles/index.css';
 import './layout.scss';
 import { Header, Main, Footer } from '@/layout';
+import SplineWrapper from '@/components/spline/spline';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +16,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <div className="kku__body__wrapper">
           <Header />
-          <Main>{children}</Main>
+          <Main>
+            <SplineWrapper />
+            {children}
+          </Main>
           <Footer />
         </div>
       </body>
