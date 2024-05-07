@@ -5,6 +5,13 @@
     align-items: center;
 }
 
+@mixin absolute-center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 @mixin skeleton-animation {
     animation: skeleton 1s ease-in-out infinite alternate;
 }
