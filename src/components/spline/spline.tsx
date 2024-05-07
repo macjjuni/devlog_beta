@@ -5,6 +5,7 @@ import Spline from '@splinetool/react-spline';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import './spline.scss';
 import { usePathname } from 'next/navigation';
+import Spinner from '@/components/spinner/spinner';
 
 const sceneUrl = 'https://prod.spline.design/wDppaG99uxF-mPel/scene.splinecode';
 
@@ -12,6 +13,7 @@ export default function SplineWrapper() {
   // region [Hooks]
 
   const pathname = usePathname();
+  const [isRender, setIsRender] = useState(false);
   const [isRenderOnPath, setIsRenderOnPath] = useState(false);
 
   // endregion
@@ -33,6 +35,10 @@ export default function SplineWrapper() {
     setIsRenderOnPath(true);
   }, []);
 
+  const onLoad = useCallback(() => {
+    setIsRender(true);
+  }, []);
+
   // endregion
 
   // region [Effects]
@@ -49,7 +55,8 @@ export default function SplineWrapper() {
 
   return (
     <div className={`kku_spline__wrapper ${rootClass}`}>
-      <Spline className="kku__spline" scene={sceneUrl} />
+      {!isRender && <Spinner />}
+      {(isRenderOnPath || isRender) && <Spline className="kku__spline" scene={sceneUrl} onLoad={onLoad} />}
     </div>
   );
 }
