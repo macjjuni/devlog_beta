@@ -2,18 +2,24 @@
 .kku_spline__wrapper {
     position: absolute;
     top: 50%; left: 0;
-    width: 50%;
-    height: calc((100dvh - 104px) / 2);
+    width: calc(100% - (480px + $kku-layout-large-padding * 2));
+    height: 600px;
     transform: translateY(-50%);
+    transition: opacity 0.3s ease;
 
     &.kku_spline__wrapper__render-on {
         visibility: visible;
+        opacity: 1;
         z-index: 1;
     }
 
     &.kku_spline__wrapper__render-off {
+        position: absolute;
         visibility: hidden;
+        opacity: 0;
         z-index: -9999;
+
+        .kku-loader { display: none; }
     }
 }
 
@@ -28,7 +34,7 @@
     .kku_spline__wrapper {
         position: relative;
         top: auto;
-        left: auto;
+        left: 0;
         transform: translateY(0);
 
         width: 100%;
@@ -38,6 +44,7 @@
 
 @media screen and (max-width: $kku-layout-small) {
     .kku_spline__wrapper {
-        height: calc((100dvh - 80px) / 2);
+        width: 100%;
+        height: calc((100dvh - (64px + 32px + ($kku-layout-medium-padding * 2))) / 2);
     }
 }

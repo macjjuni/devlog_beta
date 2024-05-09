@@ -1,8 +1,7 @@
 'use client';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-import Spline from '@splinetool/react-spline';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import Spline from '@splinetool/react-spline';
 import './spline.scss';
 import { usePathname } from 'next/navigation';
 import Spinner from '@/components/spinner/spinner';
