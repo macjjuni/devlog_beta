@@ -2,7 +2,7 @@
 
 // region [Layout]
 
-$kku-layout-large: 1200px;
+$kku-layout-large: 1100px;
 $kku-layout-medium: 768px;
 $kku-layout-small: 464px;
 
@@ -20,6 +20,28 @@ $kku-default-font-family: 'Pretendard', ui-sans-serif, system-ui, -apple-system,
 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
 'Segoe UI Symbol', 'Noto Color Emoji';
 
+$kku-font-size-heading-1: 48px;
+$kku-font-size-heading-2: 32px;
+$kku-font-size-heading-3: 28px;
+$kku-font-size-heading-4: 22px;
+
+$kku-font-size-heading-1: 48px;
+$kku-font-size-heading-2: 32px;
+$kku-font-size-heading-3: 28px;
+
+$kku-font-size-body: 16px;
+$kku-font-size-element: 14px;
+$kku-font-size-small: 12px;
+
+$kku-line-height-heading-1: 56px;
+$kku-line-height-heading-2: 40px;
+$kku-line-height-heading-3: 36px;
+$kku-line-height-heading-4: 30px;
+
+$kku-line-height-body: 24px;
+$kku-line-height-element: 18px;
+$kku-line-height-small: 20px;
+
 // endregion
 
 
@@ -27,7 +49,11 @@ $kku-default-font-family: 'Pretendard', ui-sans-serif, system-ui, -apple-system,
 
 $kku-black-color: #111111;
 $kku-white-color: #ffffff;
+
 $kku-gray-color: #C7C8CC;
+$kku-border-color: #424242;
+$kku-background-color: #242424;
+$kku-background-smooth-color: #e0e0e0;
 
 // endregion
 
