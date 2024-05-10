@@ -1,5 +1,12 @@
 @import 'fonts.scss';
+@import 'reset.scss';
+@import 'variables';
 @import 'animation.scss';
 @import 'mixins.scss';
-@import 'variables.scss';
-@import 'reset.scss';
+
+body {
+    font-family: $kku-default-font-family;
+    font-weight: 300;
+    color: $kku-white-color;
+    background: $kku-background-color;
+}
