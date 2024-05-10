@@ -13,6 +13,7 @@
     "@splinetool/runtime": "^1.2.5",
     "kku-ui": "^0.0.465",
     "next": "14.2.2",
+    "nextjs-toploader": "^1.6.12",
     "react": "^18",
     "react-dom": "^18"
   },
