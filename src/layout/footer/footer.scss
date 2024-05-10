@@ -1,7 +1,7 @@
 
 .footer {
     flex: 0 0 40px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid $kku-border-color;
 
     .footer__wrapper {
         display: flex;
@@ -17,6 +17,7 @@
 
         .footer__wrapper__text {
             font-size: 14px;
+            color: $kku-background-smooth-color;
         }
     }
 }
@@ -35,7 +36,7 @@
         .footer__wrapper {
             padding: 0 $kku-layout-small-padding;
 
-            .footer__wrapper__text { font-size: 12px;}
+            .footer__wrapper__text { font-size: 10px;}
         }
     }
 }
