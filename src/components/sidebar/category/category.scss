@@ -1,0 +1,42 @@
+
+.category__card {
+    max-width: 240px;
+    width: 100%;
+    padding: 16px;
+    border: 0.5px solid #424242;
+    border-radius: 4px;
+
+    .category__card__item:first-child { padding-top: 0; }
+
+    .category__card__item {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -0.5px;
+            left: 4px;
+            width: calc(100% - 8px);
+            height: 0.5px;
+            background: $kku-border-color;
+        }
+
+        &:hover {
+            &:after { bottom: 1px;}
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 4px 4px 4px 8px;
+            font-size: 24px;
+            font-weight: 300;
+            transition: background-color 0.3s ease;
+            border-radius: 4px;
+            @include font-body;
+
+            &:hover { background: $kku-border-color; }
+        }
+    }
+}
