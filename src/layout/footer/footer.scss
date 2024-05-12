@@ -1,7 +1,7 @@
 
 .footer {
     flex: 0 0 40px;
-    border-top: 1px solid $kku-border-color;
+    border-top: 0.5px solid $kku-border-color;
 
     .footer__wrapper {
         display: flex;
@@ -13,7 +13,7 @@
         height: 100%;
 
         margin: 0 auto;
-        padding: 0 $kku-layout-large-padding;
+        padding: 0 $kku-padding-xl;
 
         .footer__wrapper__text {
             font-size: 14px;
@@ -25,7 +25,7 @@
 
 @media screen and (max-width: $kku-layout-medium) {
     .footer > .footer__wrapper {
-        padding: 0 $kku-layout-medium-padding;
+        padding: 0 $kku-padding-lg;
     }
 }
 
@@ -34,7 +34,7 @@
         flex: 0 0 32px;
 
         .footer__wrapper {
-            padding: 0 $kku-layout-small-padding;
+            padding: 0 $kku-padding-md;
 
             .footer__wrapper__text { font-size: 10px;}
         }

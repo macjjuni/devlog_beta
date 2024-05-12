@@ -13,7 +13,7 @@
         height: 100%;
 
         margin: 0 auto;
-        padding: 0 $kku-layout-large-padding;
+        padding: 0 $kku-padding-xl;
 
         .header__logo {
 
@@ -30,7 +30,7 @@
 @media screen and (max-width: $kku-layout-medium) {
     .header {
 
-        .header__wrapper { padding: 0 $kku-layout-medium-padding; }
+        .header__wrapper { padding: 0 $kku-padding-lg; }
         .header__wrapper > .header__logo > .header__logo__link { font-size: 28px; }
     }
 }
@@ -38,7 +38,7 @@
 @media screen and (max-width: $kku-layout-small) {
     .header {
 
-        .header__wrapper { padding: 0 $kku-layout-medium-padding; }
+        .header__wrapper { padding: 0 $kku-padding-lg; }
         .header__wrapper > .header__logo > .header__logo__link { font-size: 28px; }
     }
 }

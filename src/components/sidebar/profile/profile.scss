@@ -3,9 +3,9 @@
     align-items: flex-start;
     gap: 16px;
 
-    padding: 16px;
+    padding: $kku-padding-lg;
     border: 0.5px solid $kku-border-color;
-    border-radius: 8px;
+    border-radius: 4px;
 
     .profile__card__image {
         width: 64px;

@@ -3,19 +3,26 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: $kku-layout-large-padding;
-
+    gap: 16px;
 
     .archive__layout__sidebar {
         display: flex;
         flex-direction: column;
         gap: 16px;
 
-        max-width: 240px;
+        max-width: 224px;
         width: 100%;
     }
 
-    .archive__layout__content {
-        width: 100%;
+    .archive__layout__content { width: 100%; }
+}
+
+@media screen and (max-width: $kku-layout-medium) {
+
+    .archive__layout {
+        flex-direction: column;
+
+        .archive__layout__sidebar { max-width: 100%; }
     }
 }
+

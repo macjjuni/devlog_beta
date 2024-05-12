@@ -1,7 +1,7 @@
 
 .about__layout {
     position: absolute;
-    top: 50%; right: $kku-layout-large-padding;
+    top: 50%; right: $kku-padding-xl;
     transform: translateY(-50%);
 
     display: flex;
@@ -28,8 +28,8 @@
 
 @media screen and (max-width: $kku-layout-large) {
     .about__layout {
-        left: calc(50% + $kku-layout-large-padding);
-        width: calc(50% - ($kku-layout-large-padding * 2));
+        left: calc(50% + $kku-padding-xl);
+        width: calc(50% - ($kku-padding-xl * 2));
         max-width: none;
     }
 }
@@ -42,7 +42,7 @@
         left: 0;
         transform: translateY(0);
         width: 100%;
-        padding-top: $kku-layout-medium-padding;
+        padding-top: $kku-padding-lg;
 
         .about__layout__wrapper { padding: 0; }
     }
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: $kku-layout-small) {
     .about__layout {
-        padding-top: $kku-layout-medium-padding;
+        padding-top: $kku-padding-lg;
 
         .about__layout__wrapper {
             .about__content {
