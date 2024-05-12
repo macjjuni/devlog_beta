@@ -42,6 +42,21 @@
     line-height: $kku-line-height-heading-4;
 }
 
+@mixin font-sub-title-1 {
+    font-size: $kku-font-size-sub-title-1;
+    line-height: $kku-line-height-sub-title-1;
+}
+
+@mixin font-sub-title-2 {
+    font-size: $kku-font-size-sub-title-2;
+    line-height: $kku-line-height-sub-title-2;
+}
+
+@mixin font-sub-title-3 {
+    font-size: $kku-font-size-sub-title-3;
+    line-height: $kku-line-height-sub-title-3;
+}
+
 @mixin font-body {
     font-size: $kku-font-size-body;
     line-height: $kku-line-height-body;
