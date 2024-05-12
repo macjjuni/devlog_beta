@@ -25,7 +25,6 @@ function ArchiveList() {
             <p className="archive__list__item__date">2014.04.30</p>
           </Link>
         </li>
-{' '}
         <li className="archive__list__item">
           <Link href="/archive" className="archive__list__item__link">
             <h3 className="archive__list__item__title">useRef 동적 할당하기</h3>
@@ -44,7 +43,6 @@ function ArchiveList() {
             <p className="archive__list__item__date">2014.04.30</p>
           </Link>
         </li>
-{' '}
         <li className="archive__list__item">
           <Link href="/archive" className="archive__list__item__link">
             <h3 className="archive__list__item__title">useRef 동적 할당하기</h3>
